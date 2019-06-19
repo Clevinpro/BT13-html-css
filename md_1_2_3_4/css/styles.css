@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+.title::after {
+    content: counter(count-titles, upper-roman)
+}
+
+.title__count {
+    counter-increment: count-titles; 
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 
+    First Section
+*/
+
+.first__section {
+    background: url('../images/maxresdefault.jpg') no-repeat center;
+    height: 500px;
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0 0;
+    /*  padding: 100px 0;  */
+}
+
+.first__title {
+    margin-bottom: 100px;
+}
+
+
+.first__section__text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* 
+    Books store
+*/
+
+.books__item {
+    float: left;
+    width: 300px;
+    margin-bottom: 40px;
+    list-style: none;
+}
+
+.books__item:nth-of-type(odd) {
+    margin-right: 360px;
+}
+
+.books__item:nth-last-of-type(-n+2) {
+    margin-bottom: 0;
+}
+
+/* 
+    Stores
+
+*/
+
+.stores__list {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    counter-reset: count-stores count-titles;
+}
+
+.stores__item {
+    width: 300px;
+    margin: 0 20px;
+    display: inline-block;
+    counter-increment: count-stores;
+}
+
+.stores__item::before {
+    content: counter(count-stores);
+}
+
+
+.center__text {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.first__section__vertical {
+    filter: contrast(100%);
+    padding: 0;
+    font-size: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first__section__vertical img {
+    filter: saturate(300%);
+}
+
+.first__section__vertical::after {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.first__section__vertical_lh {
+    padding: 0;
+    line-height: 500px;
+}
