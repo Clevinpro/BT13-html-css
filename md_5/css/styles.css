@@ -1,0 +1,262 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+:root {
+    --default-font-size: 16px;
+    --default-theme-color: orange;
+    --default-theme-font: Roboto;
+}
+
+body {
+    padding-top: 63px;
+    font-size: var(--default-font-size);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+
+/* 
+    Header
+*/
+
+.header {
+    box-shadow: 0 10px 20px rgba(171, 112, 224, 0.59), 0 6px 6px rgba(0,0,0,0.23);
+    padding: 10px 0;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 111;
+    width: 100%;
+}
+
+.navigation__items {
+    font-size: 0;
+    text-align: center;
+}
+
+.nav__item {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+}
+
+.nav__link {
+    display: block;
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: gainsboro;
+    text-transform: uppercase;
+}
+
+
+.navigation__subitems {
+    z-index: 2;
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* display: none; */
+    visibility: hidden;
+    /* opacity: 0; */
+}
+
+.nav__item:hover > .navigation__subitems {
+    /* display: block; */
+    /* opacity: 1; */
+    visibility: visible;
+    z-index: 1;
+}
+
+.nav__item:hover > .nav__link {
+    background: darkgray;
+}
+
+.nav__item:hover::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100px;
+    left: 0;
+    top: 0;
+    width: calc(100% + 200px);
+    z-index: -1;
+}
+
+.navigation__subitems {
+    padding: 10px 0;
+}
+
+.nav__subitem {
+    margin: 0 10px 10px;
+}
+
+.nav__sublink {
+    font-size: 16px;
+    font-weight: normal;
+    /* min-height: 56px; */
+    min-width: 160px;
+}
+
+.navigation__subitems__second {
+    transform: translateX(100%);
+    top: 0;
+    left: 0;
+    padding: 0 2px;
+}
+
+.navigation__subitems__second .nav__subitem {
+    margin: 0 0 10px;
+}
+
+/* 
+    First Section
+*/
+
+.first__section {
+    background: url('../img/camera_lense_0.jpeg') no-repeat center;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+
+.first__section__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.first__section__title {
+    font-size: 56px;
+}
+.first__section__description {
+    font-size: 32px;
+}   
+
+/* 
+    Modal
+*/
+
+.modal__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.93);
+    z-index: 1111;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+}
+
+/* 
+    Sticky blocks
+*/
+
+.sticky {
+    max-width: 300px;
+    max-height: 450px;
+    overflow: auto;
+    text-align: center;
+}
+
+.sticky__item {
+    font-size: 0;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.sticky__title {
+    display: inline-block;
+    position: sticky;
+    top: 0;
+    font-size: 42px;
+    width: 20%;
+    margin-right: 10%;
+    vertical-align: top;
+}
+
+.sticky__text {
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+    width: 70%;
+    padding: 0 10px;
+    color: cyan;
+    text-align: justify;
+}
+
+/* 
+    Video
+*/
+
+.video__section {
+    position: relative;
+}
+
+.video__section::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.73);
+}
+
+.video__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+
+.video {
+    display: block;
+    width: 100%;
+}
+
+.video__title {
+    font-size: 60px;
+}
+.video__text {
+    font-size: var(--default-font-size);
+}
+
+.iframe {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
