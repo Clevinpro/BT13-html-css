@@ -71,6 +71,34 @@ img {
     flex-flow: column wrap;
     align-items: center;
     padding: 20px;
+    transition: .3s ease-in-out 2s;
+}
+
+.team__item:hover {
+    /* transform: skewY(20deg); */
+    animation: team__item 10s;
+}
+
+@keyframes team__item {
+    0% {
+        transform: none;
+    }
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: none;
+    }
+
+    75% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: none;
+    }
 }
 
 .team__item:not(:nth-last-of-type(-n + 2)):not(.team__item__vertical) {
@@ -128,4 +156,66 @@ img {
     flex-basis: 150px;
     flex-grow: 1;
     background-color: orange;
+}
+
+
+/* 
+    Rocket
+*/
+
+.rocket {
+    width: 180px;
+    height: 180px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: url('../images/rocket.png');
+    background-size: contain;
+    animation: rocket 15s linear forwards;
+    animation-delay: 2s;
+}
+
+@keyframes rocket {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    10% {
+        transform: translate(-50%, -45%);
+    }
+
+    20% {
+        transform: translate(-50%, -50%);
+    }
+    22% {
+        transform: translate(-50%, -55%);
+    }
+    24% {
+        transform: translate(-50%, -50%);
+    }
+    26% {
+        transform: translate(-50%, -45%);
+    }
+    28% {
+        transform: translate(-50%, -50%);
+    }
+    30% {
+        transform: translate(-50%, -55%);
+    }
+
+    40% {
+        transform: translate(-50%, -50%);
+    }
+
+    
+    60% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    100% {
+        transform: translate(10000px, -10000px) rotate(45deg);
+    }
+
 }
