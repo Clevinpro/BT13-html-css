@@ -18,3 +18,24 @@ html {
     margin-bottom: 80px;
     
 }
+
+
+.our-team__item {
+    max-width: 220px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .our-team__list {
+        max-width: 560px;
+    }
+}
+
+@media (min-width: 992px) {
+    .our-team__list {
+        max-width: 960px;
+
+
+        
+    }
+}

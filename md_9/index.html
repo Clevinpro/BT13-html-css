@@ -14,119 +14,52 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="container">
-      <div class="row justify-content-between">
-        <div class="col-md-2 col-lg-2 order-2 order-md-1">
-          <a href="" class="logo">myApp</a>
+    <header class="header">
+      <div class="container">
+        <div class="row  flex-md-row-reverse justify-content-center justify-content-center justify-content-md-between">
+          <nav class="d-flex  col-12 col-md-3 justify-content-md-between">
+            <button>log in</button>
+            <button>sign up</button>
+          </nav>
+          <a class="col-12 col-md-3" href="">Logo</a>
         </div>
-        <!-- nav.>ul.>li*5.>a.{link $} -->
-        <nav class="col-md-9 col-lg-8 container order-1 order-md-2">
-          <ul
-            class="row justify-content-between flex-md-row flex-sm-column flex-column"
-          >
-            <li class=""><a href="" class="">link 1</a></li>
-            <li class=""><a href="" class="">link 2</a></li>
-            <li class=""><a href="" class="">link 3</a></li>
-            <li class=""><a href="" class="">link 4</a></li>
-            <li class=""><a href="" class="">link 5</a></li>
-          </ul>
-        </nav>
+        <div class="header__content">
+          <h1>Title</h1>
+          <p>Description</p>
+          <a href="">Find</a>
+        </div>
       </div>
     </header>
     <main>
-      <section>
-        <h1>Our Team</h1>
-        <div class="container-fluid">
-          <ul class="row justify-content-center justify-content-sm-around justify-content-md-between">
-            <li class="col-12 col-sm-6 col-md-4 col-lg-3 team__item ">
-              <img src="./img/extralarge.png" alt="" />
-              <p>Ambasador Jenkins</p>
-              <span>team lead</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis quis pariatur dicta, non cum libero velit cupiditate
-                voluptatibus quam amet repellendus, corrupti numquam debitis
-                eaque iusto cumque consectetur? Officia, accusamus.
-              </p>
-            </li>
-            <li class="col-12 col-sm-6 col-md-4 col-lg-3 team__item">
-              <img src="./img/extralarge.png" alt="" />
-              <p>Ambasador Jenkins</p>
-              <span>team lead</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis quis pariatur dicta, non cum libero velit cupiditate
-                voluptatibus quam amet repellendus, corrupti numquam debitis
-                eaque iusto cumque consectetur? Officia, accusamus.
-              </p>
-            </li>
-            <li class="col-12 col-sm-6 col-md-4 col-lg-3 team__item">
-              <img src="./img/extralarge.png" alt="" />
-              <p>Ambasador Jenkins</p>
-              <span>team lead</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis quis pariatur dicta, non cum libero velit cupiditate
-                voluptatibus quam amet repellendus, corrupti numquam debitis
-                eaque iusto cumque consectetur? Officia, accusamus.
-              </p>
-            </li>
-            <li class="col-12 col-sm-6 col-md-4 col-lg-3 team__item">
-              <img src="./img/extralarge.png" alt="" />
-              <p>Ambasador Jenkins</p>
-              <span>team lead</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis quis pariatur dicta, non cum libero velit cupiditate
-                voluptatibus quam amet repellendus, corrupti numquam debitis
-                eaque iusto cumque consectetur? Officia, accusamus.
-              </p>
-            </li>
-            <li class="col-12 col-sm-6 col-md-4 col-lg-3 team__item">
-              <img src="./img/extralarge.png" alt="" />
-              <p>Ambasador Jenkins</p>
-              <span>team lead</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis quis pariatur dicta, non cum libero velit cupiditate
-                voluptatibus quam amet repellendus, corrupti numquam debitis
-                eaque iusto cumque consectetur? Officia, accusamus.
-              </p>
-            </li>
-            <li class="col-12 col-sm-6 col-md-4 col-lg-3 team__item">
-              <img src="./img/extralarge.png" alt="" />
-              <p>Ambasador Jenkins</p>
-              <span>team lead</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis quis pariatur dicta, non cum libero velit cupiditate
-                voluptatibus quam amet repellendus, corrupti numquam debitis
-                eaque iusto cumque consectetur? Officia, accusamus.
-              </p>
-            </li>
-            <li class="col-12 col-sm-6 col-md-4 col-lg-3 team__item">
-              <img src="./img/extralarge.png" alt="" />
-              <p>Ambasador Jenkins</p>
-              <span>team lead</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis quis pariatur dicta, non cum libero velit cupiditate
-                voluptatibus quam amet repellendus, corrupti numquam debitis
-                eaque iusto cumque consectetur? Officia, accusamus.
-              </p>
-            </li>
-            <li class="col-12 col-sm-6 col-md-4 col-lg-3 team__item">
-              <img src="./img/extralarge.png" alt="" />
-              <p>Ambasador Jenkins</p>
-              <span>team lead</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis quis pariatur dicta, non cum libero velit cupiditate
-                voluptatibus quam amet repellendus, corrupti numquam debitis
-                eaque iusto cumque consectetur? Officia, accusamus.
-              </p>
-            </li>
-          </ul>
+      <section class="our-team">
+        <h2>our team</h2>
+        <div class="container our-team__list">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="our-team__item">
+                <img src="./img/extralarge.png" alt="">
+                <span>Name Surname</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="our-team__item">
+                <img src="./img/extralarge.png" alt="">
+                <span>Name Surname</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="our-team__item">
+                <img src="./img/extralarge.png" alt="">
+                <span>Name Surname</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="our-team__item">
+                <img src="./img/extralarge.png" alt="">
+                <span>Name Surname</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

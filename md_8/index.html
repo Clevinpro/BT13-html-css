@@ -11,7 +11,13 @@
     <header class="header container">
         <nav class="nav">
             <!-- a.nav__link*5{Link $} -->
-            <a href="" class="nav__link">Link Link 1</a>
+            <li class="nav__item">
+
+                <a href="" class="nav__link">Link Link 1</a>
+                <ul class="subnav">
+                    <a href="" class="nav__link subnav__link"></a>
+                </ul>
+            </li>
             <a href="" class="nav__link">Link Link 2</a>
             <a href="" class="nav__link">Link Link 3</a>
             <a href="" class="nav__link">Link Link 4</a>
@@ -19,15 +25,18 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Our team</h1>
+        <section class="our-section">
+            <h1 class="our-section__tile our-section__tile--black" >Our team</h1>
             <ul class="team__list container">
                 <li class="team__item">
-                        <picture>
-                            <source srcset="./img/extralarge.png" media="(max-width: 767px)">
-                            <source srcset="./img/large.png" media="(max-width: 1199px)">
-                            <img srcset="./img/child-1837375__340.png" alt="…">
-                        </picture>
+                    <picture>
+                        <source 
+                            srcset="./img/child-1837375__340.png 340w, ./img/extralarge.png 680w"
+                            sizes="340px"
+                            media="(max-width: 767px)"
+                        >
+                        <img srcset="./img/child-1837375__340.png 340w, ./img/large.png 680w" sizes="340px" alt="…">
+                    </picture>
                     <p>Name Surname</p>
                 </li>
                 <li class="team__item">
@@ -43,6 +52,18 @@
                     <p>Name Surname</p>
                 </li>
             </ul>
+        </section>
+        <section class="svg-section">
+            <h2 class="svg-section__title">Svg icons</h2>
+            <div class="svg-section__icons">
+                <svg class="svg-section__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <title>quill</title>
+                    <path d="M0 32c4-12 14.469-32 32-32-8.219 6.594-12 22-18 22s-6 0-6 0l-6 10h-2z"></path>
+                </svg>
+                <svg class="svg-section__icon" >
+                    <use href="./img/icons/symbol-defs.svg#icon-pencil"></use>
+                </svg>
+            </div>
         </section>
     </main>
 </body>

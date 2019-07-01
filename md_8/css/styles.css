@@ -87,3 +87,19 @@ img {
         justify-content: center;
     }
 }
+
+/* 
+    Svg section
+*/
+
+.svg-section__icon {
+    fill: gold;
+}
+
+.svg-section__icon:hover {
+    fill: forestgreen;
+}
+
+.svg-section {
+    background: url('../img/icons/pencil.svg') no-repeat center;
+}
